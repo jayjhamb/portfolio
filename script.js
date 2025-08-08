@@ -193,19 +193,6 @@ document.querySelectorAll('.activity-item').forEach(item => {
 });
 
 // Project card interactions
-document.querySelectorAll('.project-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const linkText = link.textContent;
-        const projectName = link.closest('.project-card').querySelector('.project-name').textContent;
-        
-        if (linkText === 'Live Demo') {
-            alert(`${projectName} live demo would open here.\n\nReplace with actual demo URL.`);
-        } else if (linkText === 'GitHub') {
-            alert(`${projectName} GitHub repository would open here.\n\nReplace with actual GitHub URL.`);
-        }
-    });
-});
 
 console.log('🚀 Portfolio loaded successfully!');
 console.log('💡 Keyboard shortcuts:');
