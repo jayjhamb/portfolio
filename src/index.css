@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;1,300;1,400&family=Geist+Mono:wght@300;400&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --text: #d6d0c8;
+  --muted: #4a4540;
+  --accent: #c8b89a;
+  --line: #1e1e1e;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+body {
+  color: var(--text);
+  font-family: 'Cormorant', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}

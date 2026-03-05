@@ -1,0 +1,55 @@
+.date {
+  display: block;
+  font-family: 'Geist Mono', monospace;
+  font-weight: 300;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+}
+
+/* Rich post layout */
+.richWrapper {
+  position: relative;
+  min-height: 100vh;
+  background: #0e1117;
+}
+
+.richBack {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 100;
+  font-family: 'Geist Mono', monospace;
+  font-weight: 300;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: #4a4540;
+  text-transform: lowercase;
+  cursor: pointer;
+  background: rgba(14, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 8px 14px;
+  border-radius: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.richBack:hover {
+  color: #d6d0c8;
+  border-color: rgba(255,255,255,0.15);
+}
+
+.richFrame {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  border: none;
+  /* grows with content via JS if needed */
+}
+
+@media (max-width: 520px) {
+  .richBack {
+    top: 16px;
+    left: 16px;
+  }
+}
