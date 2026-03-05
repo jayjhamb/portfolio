@@ -1,3 +1,4 @@
+
 # journal
 
 A minimal dark-themed blog built with React + TypeScript + Vite.
@@ -53,3 +54,9 @@ CSS variables are defined in `src/index.css`:
   --line: #1e1e1e;
 }
 ```
+=======
+## Portfolio
+
+Accessible at https://jayjhamb.com
+
+

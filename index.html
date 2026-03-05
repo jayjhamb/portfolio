@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,3 +11,450 @@
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Jhamb - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Menu Bar -->
+    <div class="menu-bar">
+        <div class="menu-left">
+            <span class="apple-logo"></span>
+            <span>Portfolio</span>
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Window</span>
+            <span>Help</span>
+        </div>
+        <div class="menu-right">
+            <span>🔋 100%</span>
+            <span>📶</span>
+            <span id="current-time">2:47 PM</span>
+        </div>
+    </div>
+
+    <!-- Main Window -->
+    <div class="window">
+        <!-- Window Header -->
+        <div class="window-header">
+            <div class="window-controls">
+                <div class="window-control control-red"></div>
+                <div class="window-control control-yellow"></div>
+                <div class="window-control control-green"></div>
+            </div>
+            <div class="window-title">Jay Jhamb - Portfolio</div>
+        </div>
+
+        <!-- Window Content -->
+        <div class="window-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-section">
+                    <div class="sidebar-title">Navigation</div>
+                    <div class="sidebar-item active" data-section="profile">
+                        <div class="sidebar-icon">👤</div>
+                        <div>Profile</div>
+                    </div>
+                    <div class="sidebar-item" data-section="projects">
+                        <div class="sidebar-icon">💼</div>
+                        <div>Projects</div>
+                    </div>
+                    <div class="sidebar-item" data-section="experience">
+                        <div class="sidebar-icon">🏢</div>
+                        <div>Experience</div>
+                    </div>
+                    <div class="sidebar-item" data-section="contact">
+                        <div class="sidebar-icon">📧</div>
+                        <div>Contact</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <div class="sidebar-title">Quick Actions</div>
+                    <a class="sidebar-item" href="resources/resume-summer25.pdf" target="_blank">
+                        <div class="sidebar-icon">📄</div>
+                        <div>Resume</div>
+                    </a>
+                    <a class="sidebar-item" href="https://www.linkedin.com/in/jayjhamb/" target="_blank">
+                        <div class="sidebar-icon">🔗</div>
+                        <div>LinkedIn</div>
+                    </a>
+                    <a class="sidebar-item" href="https://github.com/jayjhamb" target="_blank">
+                        <div class="sidebar-icon">💻</div>
+                        <div>GitHub</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Content Area -->
+            <div class="content-area">
+                <!-- Profile Section -->
+                <div class="content-section active" id="profile">
+                    <div class="profile-layout">
+                        <!-- Left Column -->
+                        <div class="profile-main">
+                            <div class="profile-hero">
+                                <div class="profile-avatar-container">
+                                    <div class="profile-avatar">👨‍💻</div>
+                                    <div class="status-indicator"></div>
+                                </div>
+                                <div class="profile-intro">
+                                    <h1 class="profile-name">Jay Jhamb</h1>
+                                    <p class="profile-title">Aspiring Software Engineer</p>
+                                    <div class="profile-location">📍 Plano, TX</div>
+                                    <p class="profile-description">
+                                        Passionate about building innovative software solutions and leveraging machine learning to create impactful applications. 
+                                        Currently pursuing a degree in Computer Science at the University of Texas at Dallas.
+                                    </p>
+                                    <div class="profile-actions">
+                                        <button class="action-btn primary">💬 Let's Chat</button>
+                                        <button class="action-btn secondary">📄 View Resume</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Stats Cards -->
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-number">1+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">10+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">1K+</div>
+                                    <div class="stat-label">Users Impacted</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">5+</div>
+                                    <div class="stat-label">Technologies Mastered</div>
+                                </div>
+                            </div>
+
+                            <!-- What I Do Section -->
+                            <div class="what-i-do">
+                                <h3>What I Do Best</h3>
+                                <div class="capabilities-grid">
+                                    <div class="capability-card">
+                                        <div class="capability-icon">⚡</div>
+                                        <div class="capability-content">
+                                            <h4>Full-Stack Development</h4>
+                                            <p>End-to-end application development from concept to deployment using modern frameworks and best practices.</p>
+                                        </div>
+                                    </div>
+                                    <div class="capability-card">
+                                        <div class="capability-icon">☁️</div>
+                                        <div class="capability-content">
+                                            <h4>Machine Learning</h4>
+                                            <p>Experience in training LLM's with few-shot learning and various calibration technqiues</p>
+                                        </div>
+                                    </div>
+                                    <div class="capability-card">
+                                        <div class="capability-icon">🤖</div>
+                                        <div class="capability-content">
+                                            <h4>AI/ML Integration</h4>
+                                            <p>Building intelligent applications with machine learning capabilities and data-driven insights.</p>
+                                        </div>
+                                    </div>
+                                    <div class="capability-card">
+                                        <div class="capability-icon">👥</div>
+                                        <div class="capability-content">
+                                            <h4>Team Leadership</h4>
+                                            <p>Mentoring developers, leading technical initiatives, and fostering collaborative engineering cultures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="profile-sidebar">
+                            <!-- Tech Stack -->
+                            <div class="sidebar-section tech-stack-section">
+                                <h4>Tech Stack</h4>
+                                <div class="tech-categories">
+                                    <div class="tech-category">
+                                        <div class="tech-category-title">Frontend</div>
+                                        <div class="tech-items">
+                                            <span class="tech-skill advanced">JavaScript</span>
+                                            <span class="tech-skill advanced">TypeScript</span>
+                                            <span class="tech-skill advanced">React</span>
+                                            <span class="tech-skill intermediate">Vue.js</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-category">
+                                        <div class="tech-category-title">Backend</div>
+                                        <div class="tech-items">
+                                            <span class="tech-skill advanced">Python</span>
+                                            <span class="tech-skill advanced">C++</span>
+                                            <span class="tech-skill intermediate">Java</span>
+                                            <span class="tech-skill intermediate">Go</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-category">
+                                        <div class="tech-category-title">Database</div>
+                                        <div class="tech-items">
+                                            <span class="tech-skill advanced">PostgreSQL</span>
+                                            <span class="tech-skill advanced">MongoDB</span>
+                                            <span class="tech-skill intermediate">Redis</span>
+                                        </div>
+                                    </div>
+                                    <div class="tech-category">
+                                        <div class="tech-category-title">DevOps</div>
+                                        <div class="tech-items">
+                                            <span class="tech-skill advanced">AWS</span>
+                                            <span class="tech-skill advanced">Docker</span>
+                                            <span class="tech-skill intermediate">Kubernetes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Info -->
+                            <div class="sidebar-section">
+                                <h4>Quick Info</h4>
+                                <div class="info-list">
+                                    <div class="info-item">
+                                        <span class="info-icon">🎓</span>
+                                        <div>
+                                            <div class="info-label">Education</div>
+                                            <div class="info-value">CS @ UT Dallas</div>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">💼</span>
+                                        <div>
+                                            <div class="info-label">Current Role</div>
+                                            <div class="info-value">Undergraduate Research Assistant @ UT Dallas</div>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">🌟</span>
+                                        <div>
+                                            <div class="info-label">Specialization</div>
+                                            <div class="info-value">Full-Stack & Machine Learning</div>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <span class="info-icon">⚡</span>
+                                        <div>
+                                            <div class="info-label">Availability</div>
+                                            <div class="info-value status-available">Open to opportunities</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Activity -->
+                            <div class="sidebar-section">
+                                <h4>Recent Activity</h4>
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">🚀</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text">Working on Diary Application -- Cafe Theme</div>
+                                            <div class="activity-time">2 Days Ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">📝</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text">Finished Liberty Mutual SWE Internship</div>
+                                            <div class="activity-time">1 week ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="activity-item">
+                                        <div class="activity-icon">🎤</div>
+                                        <div class="activity-content">
+                                            <div class="activity-text">Attended Liberty Mutual Intern Summit</div>
+                                            <div class="activity-time">2 weeks ago</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Section -->
+                <div class="content-section" id="projects">
+                    <h2 style="margin-bottom: 24px; font-size: 24px; font-weight: 700;">Featured Projects</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">🏪</div>
+                            <div class="project-content">
+                                <h3 class="project-name">Diary Journal Application</h3>
+                                <p class="project-description">
+                                    Aesthetic web-based journaling app designed for note-taking. Allows users to journal, track moods, and personalize their experience through theme selection.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">Docker</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/jayjhamb/diary-app" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">🤖</div>
+                            <div class="project-content">
+                                <h3 class="project-name">Self-Evaluation on Davinci-002 OpenAI Model</h3>
+                                <p class="project-description">
+                                    Evaluating the davinci-002 model on how accurate it is on P(T) as mentioned by the P(True) calibration experiment from Language Models (Mostly) Know What They Know (Kadavath et al., 2022)
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">OpenAI API</span>
+                                    <span class="tech-tag">Few Shot</span>
+                                    <span class="tech-tag">numpy</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/jayjhamb/selfEval" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">📊</div>
+                            <div class="project-content">
+                                <h3 class="project-name">Smart Calendar Assistant</h3>
+                                <p class="project-description">
+                                    A full-stack web application that leverages GPT-4 and Google Calendar APIs to simplify and automate your scheduling tasks. The app allows users to sign in securely via Google OAuth2, then enter natural language descriptions of meetings or events they want to schedule. Using GPT-4, the app parses these descriptions into structured event details — such as title, duration, preferred time ranges, and attendees.
+                                    <br>
+                                    It then accesses your Google Calendar to check for scheduling conflicts and suggests optimal available time slots within your preferred timeframe. You can select a suggested slot to automatically create the event in your calendar.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Google OAuth API</span>
+                                    <span class="tech-tag">Calendar API</span>
+                                    <span class="tech-tag">GPT-4</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/jayjhamb/smart-calendar-assistant" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="content-section" id="experience">
+                    <h2 style="margin-bottom: 24px; font-size: 24px; font-weight: 700;">Professional Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">Software Engineer Intern</h3>
+                                <span class="timeline-period">May 2025 - Aug 2025</span>
+                            </div>
+                            <div class="timeline-company">Liberty Mutual Insurance</div>
+                            <p class="timeline-description">
+                                • Migrated 7 legacy database tables to modern infrastructure, reducing overall project workload by 50% and
+                                enabling team to focus on high-impact development initiatives
+                                <br>
+                                • Modernized Java code affecting 3,000+ JUnit test cases, ensuring compatibility across a large test suite
+                                <br>
+                                • Collaborated in an Agile development environment, implementing automated CI/CD pipelines and Git version
+                                control workflows to streamline code deployment and maintain code quality standards
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">Undergraduate Research Assistant</h3>
+                                <span class="timeline-period">Jan 2025 - Aug 2025</span>
+                            </div>
+                            <div class="timeline-company">University of Texas at Dallas</div>
+                            <p class="timeline-description">
+                                • Evaluated multiple OpenAI models (Davinci-002, GPT-3.5, GPT-4o) using P(True) calibration methodology,
+                                processing 20,000 examples to measure confidence accuracy
+                                <br>
+                                • Developed a Python evaluation framework integrating OpenAI API with few-shot learning, temperature
+                                sampling, and k-sampling techniques to optimize automated model assessment, achieving 40% higher
+                                confidence scores
+                                <br>
+                                • Implemented statistical analysis and data visualizations using matplotlib and pandas to identify calibration
+                                trends and establish reproducible evaluation protocols
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-header">
+                                <h3 class="timeline-role">GenAI Extern</h3>
+                                <span class="timeline-period">May 2025 - June 2025</span>
+                            </div>
+                            <div class="timeline-company">Cognizant</div>
+                            <p class="timeline-description">
+                                • Developed code for text generation and completion tasks using transformer-based language models, exploring
+                                tokenization, attention mechanisms, and fine-tuning
+                                <br>
+                                • Built experimental projects involving Generative Adversarial Networks to explore synthetic text and data
+                                generation techniques
+                                <br>
+                                • Implemented and analyzed transformer architectures to understand their application in real-world NLP tasks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="content-section" id="contact">
+                    <h2 style="margin-bottom: 24px; font-size: 24px; font-weight: 700;">Get In Touch</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 32px; line-height: 1.6;">
+                        I'm always interested in discussing new opportunities, innovative projects, or just connecting 
+                        with fellow developers. Feel free to reach out through any of these channels.
+                    </p>
+                    <div class="contact-grid">
+                        <a href="mailto:jhambjayn@gmail.com" class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">jhambjay@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://linkedin.com/in/jayjhamb" class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-info">
+                                <div class="contact-label">LinkedIn</div>
+                                <div class="contact-value">linkedin.com/in/jayjhamb</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/jayjhamb" class="contact-item">
+                            <div class="contact-icon">💻</div>
+                            <div class="contact-info">
+                                <div class="contact-label">GitHub</div>
+                                <div class="contact-value">github.com/jayjhamb</div>
+                            </div>
+                        </a>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-info">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+1 214-724-9812</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
