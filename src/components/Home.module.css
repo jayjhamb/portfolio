@@ -1,0 +1,72 @@
+.home {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 120px 32px 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-family: 'Cormorant', Georgia, serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 42px;
+  color: var(--text);
+  letter-spacing: 0.01em;
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.05s forwards;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.link {
+  font-family: 'Geist Mono', monospace;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  text-transform: lowercase;
+  background: none;
+  border: none;
+  padding: 14px 0;
+  cursor: pointer;
+  border-top: 1px solid var(--line);
+  width: 160px;
+  text-align: left;
+  transition: color 0.2s;
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.link:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 520px) {
+  .name {
+    font-size: 32px;
+  }
+}
